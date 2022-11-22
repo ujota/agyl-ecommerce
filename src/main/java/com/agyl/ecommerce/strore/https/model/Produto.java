@@ -1,43 +1,46 @@
 package com.agyl.ecommerce.strore.https.model;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
-@Entity(name="produto")
+@Entity(name="ecommerce")
 public class Produto {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private Long id;
+    @Column(name = "idProduto", nullable = false)
+    private Long idProduto;
 
-    private Long idCliente;
+    private String urlImagem;
+
     private String descricao;
     private Double preco;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
 
     public Produto() {
     }
 
-    public Produto(Long idCliente, String descricao, Double preco) {
-        this.idCliente = idCliente;
+    public Produto(Long idProduto, String urlImagem, String descricao, Double preco) {
+        this.idProduto = idProduto;
+        this.urlImagem = urlImagem;
         this.descricao = descricao;
         this.preco = preco;
     }
 
     public Long getIdCliente() {
-        return idCliente;
+        return idProduto;
     }
 
     public void setIdCliente(Long idCliente) {
-        this.idCliente = idCliente;
+        this.idProduto = idCliente;
+    }
+
+    public String getUrlImagem(){
+        return urlImagem;
+    }
+
+    public void setUrlImagem(){
+        this.urlImagem = urlImagem;
     }
 
     public String getDescricao() {
