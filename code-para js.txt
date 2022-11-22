@@ -1,0 +1,30 @@
+let table = document.createElement('table');
+document.getElementById('body').appendChild(table);
+let row_1 = document.createElement('tr');
+
+let coluna_1 = document.createElement('td');
+coluna_1.innerHTML = "<img src='imagem/wg.jpg' width='150' <br> <p>R$ @@,@@</p>";
+let coluna_2 = document.createElement('td');
+coluna_2.innerHTML = "<img src='imagem/wg.jpg' width='150' <br> <p>R$ @@,@@</p>";
+let coluna_3 = document.createElement('td');
+coluna_3.innerHTML = "<img src='imagem/wg.jpg' width='150'<br><p>R$ @@,@@</p>";
+
+row_1.appendChild(coluna_1);
+row_1.appendChild(coluna_2);
+row_1.appendChild(coluna_3);
+table.appendChild(row_1);
+
+let row_2 = document.createElement('tr');
+
+let row_2_data_1 = document.createElement('td');
+row_2_data_1.innerHTML = "<img src='imagem/wg.jpg' width='150' <br> <p>R$ @@,@@</p>";
+
+row_2.appendChild(row_2_data_1);
+table.appendChild(row_2)
+
+
+
+
+
+
+
