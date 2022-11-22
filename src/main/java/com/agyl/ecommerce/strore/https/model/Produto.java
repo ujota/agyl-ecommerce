@@ -7,7 +7,7 @@ public class Produto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "idProduto", nullable = false)
+    @Column(name = "idProduto")
     private Long idProduto;
 
     private String urlImagem;
